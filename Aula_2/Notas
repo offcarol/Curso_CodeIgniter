@@ -1,0 +1,44 @@
+    
+    MVC
+    
+        - Padrão MVC: uma forma lógica de separar a aplicação em 3 camadas:
+            1) Model: Regra de negócios -> armazenamento de dados, integridade, consistência, consultas, etc;
+            2) View: Camada de visualização -> Interface/apresentação, aparência e código HTML;
+            3) Controller: Camada Intermediária entre as 2 anteriores, que media elas -> Recebe, interpreta e valida dados, cria e atualiza views, consulta e modifica models;
+            
+            * um model nunca pode interagir diretamente com o usuário, só a view;
+            * controller nunca deve executar ações no BD, só pelo model;
+            * view não deve ter regra de negócio e nem decidir o que deve ser executado;
+    
+    Pastas:
+    
+        - Nunca alterar pasta System, é o "Kernel" do CI;
+        - user_guide: guia do usuário, deletar em projetos;
+        - Usar apenas pasta Aplication:
+            * Cache: armazena arq que são colocados em cash, deve ter permissão de escrita no servidor se for utilizar cash;
+            * Config: armazena arq de config;
+            * Controllers: armazena itens da camada C do MVC;
+            * Core: estende as funcionalidades do CI;
+            * Helpers: armazena os helpers criados;
+            * Hooks: armazena modificações ou funções que estende as funcionalidades do CI, mas que são desenvolvidas;
+            * Language: dicio idiomas;
+            * Libraries: armazena bibliotecas criadas ou estendidas do dir do CI;
+            * Logs: caso configure, armazena os logs do sistema;
+            * Models: armazena todos os M do MVC, os Models
+            * Third Party: armazena código de terceiros, classes que auxiliam no projeto
+            * Views: armazena a camada B, todos os Views;
+            * composer.json: utilizado quando se usa o composer para gerenciar dependências do projeto;
+            * index.php: arquivo básico feito com CI, responsável por chamar todas as classes e incorporar com a aplication;
+            
+    Usar o CI para mais de 1 projeto no localhost:
+        - ir para a pasta ci
+            - system: mudar a localização para ser compartilhada
+        - criar nova pasta na pasta CI, pegar tudo da pasta menos system e jogar na nova
+        - ir em essencial
+            - index.php
+                - linha 100, $system_path = 'system';
+                - mudar $system_path = '../system' e salvar;
+        - compactar e por o nome de base_projeto;
+        para criar uma nova aplication com a nova pasta;
+        
+        

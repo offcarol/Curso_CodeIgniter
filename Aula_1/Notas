@@ -1,0 +1,32 @@
+
+    Benefícios:
+
+        - Framework leve, limpo e objetivo;
+        - Compatível com várias hospedagens, sem regras restritivas de codificação;
+        - Padrão MVC (recomendado, mas não obrigatório);
+        - Mais rápido que a maioria dos Frameworks;
+        - Boa curva de aprendizado;
+        - Desenvolvido com Orientação à Objetos;
+        
+    Instalação:
+    
+    https://codeigniter.com
+    1) mysql-ctl install
+    2) mysql-ctl start
+    3) phpmyadmin-ctl install
+    4) wget https://github.com/bcit-ci/CodeIgniter/archive/3.1.6.zip
+    5) unzip 3.1.6.zip
+    
+    MySQL 5.5 database added.  Please make note of these credentials:
+
+       Root User: offcarol
+       Database Name: c9
+       
+    PHPMyAdmin Installation complete. You can log in at: https://curso-codeigniter-offcarol.c9users.io/phpmyadmin with the following username (and blank password):
+
+       Username: offcarol
+    
+    
+    
+    
+    
